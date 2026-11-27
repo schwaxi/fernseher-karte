@@ -1,4 +1,4 @@
-// fernseher-karte v1.0.0
+// fernseher-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -476,7 +476,7 @@ class FernseherKarte extends HTMLElement {
 
 if (!customElements.get(TYPE17)) customElements.define(TYPE17, FernseherKarte);
 if (!window.customCards.some((c) => c.type === TYPE17)) {
-  window.customCards.push({ type: TYPE17, name: "Fernseher-Karte", description: "Google TV / Android TV: Ein/Aus, laufende App, Titel, App-Tasten und Fernbedienung" });
+  window.customCards.push({ type: TYPE17, name: "Fernseher-Karte", description: "Google TV / Android TV: Ein/Aus, laufende App, Titel, App-Tasten und Fernbedienung", preview: true });
 }
 }
 
